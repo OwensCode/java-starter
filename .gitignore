@@ -28,6 +28,9 @@ build/
 # Maven files
 target/
 
+# sbt files
+project/target/
+
 # IntelliJ files
 .idea/
 *.iml
