@@ -3,7 +3,7 @@
 Java starter project for coding exercise setup. This is mainly to prove that the development
 environment is setup correctly to compile and test code. Namely:
 
-* Java 1.8 JDK is installed and working.
+* Java 11 JDK is installed and working.
 * Gradle, Maven or SBT is installed and working. Any of them is fine (if you have them installed,
   otherwise go with Gradle).
 * Gradle/Maven/SBT is able to download any necessary libraries.
@@ -12,12 +12,12 @@ environment is setup correctly to compile and test code. Namely:
   
 If you're starting from scratch and unsure how to proceed, go with the Oracle Java JDK, Gradle and
 IntelliJ IDEA CE.  A good starting point if you need some help installing the JDK and Gradle:
-http://exercism.io/languages/java/installation.
+[Installing Java](http://exercism.io/languages/java/installation).
   
 ## Working from the command line
 
 The following will build the code and run the unit tests, and (if you want to) run the main function
-code as well.
+code as well. [SDKMAN!](https://sdkman.io/) is a good tool for managing these tools.
 
 ### Gradle
 
@@ -30,7 +30,7 @@ code as well.
     $ mvn clean package
     $ java -cp target/java-starter-1.0.jar monme.HelloWorld
     Hello, World!
-    
+
 ### SBT
 
     $ sbt clean test package
@@ -57,3 +57,11 @@ shouldn't be working with any JEE specific code.
 You should be able to import the project using a Gradle/SBT plugin, but Eclipse seems to have better
 built-in support for Maven. The "import" is pretty simple and you should be up and running very
 quickly.
+
+### Visual Studio Code
+
+Visual Studio Code works well for Java development. There are a lot of extensions available. Some
+recommendations:
+
+* Java Extension Pack from Microsoft
+* Language Support for Java from Red Hat
